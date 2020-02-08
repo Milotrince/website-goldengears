@@ -19,42 +19,77 @@ body {
 header {
   display: block;
   padding: 8px 8px 0px 40px;
-  height: 200px;
+  height: 100px;
 }
 
 .diagonal {
-  position: relative;
-  background-color: transparent;
-}
-
-.diagonal:before {
-  background-color: gold;
-  content: '';
-  position: absolute;
-  top: -50px;
-  left: 0;
+  display: flex;
   width: 100%;
-  height: calc(100% + 100px);
-  clip-path: polygon(0% 0%, 100% 50px, 100% 100%, 0% calc(100% - 50px));
-}
-
-.diagonal-content {
-  position: relative;
-  z-index: 1;
-  color: #ffffff;
+  z-index: 100;
 }
 
 .contrast {
   background-color: #111111;
   color: #ffffff;
+  fill: #ffffff;
 }
 
-.left {
+.video-container {
+  margin-top: -60px;
+  height: 600px;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+#home-top-video:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#home-top-video {
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 177.77777778vh; /* 100 * 16 / 9 */
+  min-width: 100%;
+  min-height: 56.25vw; /* 100 * 9 / 16 */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* % of current element */
+}
+
+#home-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: gold;
+  z-index: 1;
+}
+
+.header-contents {
+  padding: 20px 40px 8px;
+  display: flex;
+  align-items: center;
+}
+
+.flex-left {
+  flex: 1;
   float: left;
 }
 
-.right {
-  float: right;
+.flex-right {
+  justify-content: flex-end;
 }
 
 .navbar {
@@ -86,7 +121,7 @@ a:hover {
   display: block;
   margin: 20px auto 40px auto;
   padding: 16px;
-  background-color: #eeeeee;
+  background-color: #303030;
 }
 
 .block-background {
