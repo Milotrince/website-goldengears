@@ -12,7 +12,7 @@
 
         <header class="header-contents">
             <div class="flex-left">
-                <img src="assets/logo.png" alt="Golden Gears" height=100>
+                <img class="logo shine" src="assets/logo.png" alt="Golden Gears" height=100>
             </div>
 
             <div class="navbar flex-right">
@@ -32,14 +32,14 @@
             </svg>
 
             <div class="video-container">
-              <div id="home-top-video">
+              <div id="hero-video">
                 <video autoplay loop muted width="100%">
                     <source src="assets/intro.mov" type="video/mp4">
                 </video>
-                <div id="home-text">
+                <div class="hero-video-text">
                     <img src="assets/icon.png" alt="GG" height=200>
-                    <h1>Golden Gears Robotics</h1>
-                    <h1>FIRST Tech Challenge Team 9881</h1>
+                    <h1 class="video-title shine shine-text">Golden Gears Robotics</h1>
+                    <h2 class="video-subtitle shine shine-text">FIRST Tech Challenge Team 9881</h2>
                 </div>
               </div>
             </div>
@@ -47,20 +47,45 @@
             <svg class="diagonal" style="margin-top: -60px; height: 60px; fill: #111111;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <polygon points="100 0 100 10 0 10" />
             </svg>
+            <svg class="diagonal" style="margin-bottom: -60px; height: 60px; fill: #111111; "xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <polygon points="0 0 100 0 0 10" />
+            </svg>
         </div>
 
         <div id="content">
-            <div class="block">
-                <div class="block-content">
-                    <p>Golden Gears is a nonprofit (12 U.S. Code § 3051), La Cañada based robotics team that aspires to not only succeed in the FIRST Tech Challenge, an international high school robotics competition, but also provide opportunities to the younger generations in STEM.</p>
+
+            <div class="block-background" style="background-image: url('assets/team.jpg')"></div>
+            <div class="block" style="margin-bottom: 60px;">
+                <div class="block-title left-title">
+                    Who <span class="white">We Are</span>
+                </div>
+                <div class="block-content" style="margin-left: 50vw; width: 200px;">
+                    We are a nonprofit (12 U.S. Code § 3051) robotics team based in La Cañada, California. We aspire to not only succeed in the FIRST Tech Challenge, an international high school robotics competition, but also provide opportunities to the younger generations in STEM.
                 </div>
             </div>
 
+
+            <svg class="diagonal" style="margin-top: -60px; height: 60px; fill: #111111; "xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <polygon points="0 0 100 10 0 10" />
+            </svg>
+            
+
             <div class="block">
+
                 <div class="block-title">
-                       Outreach Programs 
+                    <span class="white">Our</span> Impact
                 </div>
                 <div class="block-content">
+
+                    <div class="dramatic-list">
+                        <ul>
+                            <li>15 students</li>
+                            <li>3 robots designed</li>
+                            <li>10 experts reached</li>
+                            <li>1000 young minds impacted</li>
+                        </ul>
+                    </div>
+
                     <ul>
                         <li>Mentoring FIRST Lego League teams</li>
                         <li>Mentoring fellow FIRST Tech Challenge teams</li>
@@ -85,34 +110,26 @@
                 </div>
             </div>
 
-            
-            <p>
-
-                AWARDS AND ACHIEVEMENTS
-                THIRD PLACE INSPIRE
-                Best all-around of 48 teams in the Los Angeles Regional Championships
-
-                CONNECT AWARD
-                Engaging the engineering community
-
-                QUALIFIED FOR WORLD CHAMPIONSHIPS' IN HOUSTON
-                Among the 7 of the 48 teams in the Los Angeles Regional Championships which qualified
-            </p>
-            <p>
-                HOW GOLDEN GEARS STARTED
-The Golden Gears started out as a FIRST Lego League team in August, 2012 in La Canada, California.  We are a community team working out of a garage. We have worked together as a team over the past 5 years and have learned a lot about teamwork, researching solutions to problems, gracious professionalism, NXT as a platform, robot form and function, and good design principles. While an FLL team, we were awarded trophies for programming, robot design and the robot game; and Champions Trophy two times in a row at qualifying tournaments.
+            <div class="block">
+                <div class="block-title" style="text-align: center;">
+                    Support us
+                </div>
+                <div class="block-content">
+                    <p>For a small team like ours, even just a little bit of contribution can go a long way.</p>
+                    <div style="text-align: center;">
+                        <a class="button shine" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=d-paypal@krider.org&item_name=Golden%20Gears%20#9881&currency_code=USD">
+                            Donate
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
 
 
-Over the summer of 2015, we decided to try FTC as our next challenge. To get to know the new materials and platform of a larger robot, we assembled the PushBot and a half-court for practicing in our garage. While putting together PushBot, some team members showed interest and skill in robot assembly while others decided (that after the Kickoff) to pursue the programming, robot driving, and support roles like managing the Engineering Notebook and outreach.  
-            </p>
-
-            <p>
-
-                SUPPORT US!
-Your generous contributions will help us succeed in FTC and teach our members the important skills needed in an increasingly technological world. You will also allow us to better serve our community through our outreach programs.
-            </p>
-            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=d-paypal@krider.org&item_name=Golden%20Gears%20#9881&currency_code=USD">Donate</a>
             <a href="https://www.instagram.com/ftc9881/">Instagram</a>
+
+            <h2>mask-image test</h2>
+    <img class="mask-img example-mask" src="https://abbeyjfitzgerald.com/wp-content/uploads/2017/10/colorful-artwork.jpg" alt="Masked image">
 
 
         <footer class="contrast">
@@ -121,6 +138,7 @@ Your generous contributions will help us succeed in FTC and teach our members th
         </footer>
 
         <script src="js/jquery.min.js"></script>
+        <script src="js/styling.js"></script>
     </body> 
 
 </html> 
