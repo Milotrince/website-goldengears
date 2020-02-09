@@ -150,6 +150,12 @@ a.button {
 .left-title {
   position: absolute;
   transform: rotate(-90deg) translate(-200px, -260px);
+  white-space: nowrap;
+}
+
+.caption-right {
+  width: 200px;
+  margin-left: 50vw;
 }
 
 .dramatic-list {
@@ -168,8 +174,15 @@ a.button {
   color: #ffd900;
 }
 
+.medium-tint:before {
+  background: #00000080;
+}
 
-#hero-video:before {
+.light-tint:before {
+  background: #00000041;
+}
+
+.hero-video:before {
   content: "";
   position: absolute;
   top: 0;
@@ -177,10 +190,9 @@ a.button {
   left: 0;
   bottom: 0;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.5);
 }
 
-#hero-video {
+.hero-video {
   overflow: hidden;
   position: absolute;
   z-index: -1;
@@ -247,6 +259,10 @@ a:hover {
   display: block;
 }
 
+.center-children {
+  text-align: center;
+}
+
 
 .block {
   display: block;
@@ -305,9 +321,10 @@ a:hover {
 }
 
 .icon-container {
-  text-decoration: none;
-  margin-top: 20px;
   padding: 8px;
+}
+.icon-container a {
+  text-decoration: none;
 }
 
 .icon {
@@ -316,11 +333,11 @@ a:hover {
   padding: 8px;
   fill: white;
 }
-.icon #gradient {
+.icon .gradient {
   opacity: 0;
   transition: opacity .5s ease;
 }
-.icon #gradient:hover {
+.icon .gradient:hover {
   opacity: 1.0;
 }
 
