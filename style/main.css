@@ -47,32 +47,39 @@ a.button {
   text-transform: uppercase;
 }
 
-.logo {
-
-}
-
-
-
-.mask-img {
-  display: block;
-  max-width: 50%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.example-mask {
-  mask-image: url("https://abbeyjfitzgerald.com/wp-content/uploads/2017/10/browser-icon-01.svg");
-  -webkit-mask-image: url("https://abbeyjfitzgerald.com/wp-content/uploads/2017/10/browser-icon-01.svg");
+.masked {
   mask-mode: alpha;
   -webkit-mask-mode: alpha;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  mask-size: 200px;
-  -webkit-mask-size: 200px;
   mask-position: center;
   -webkit-mask-position: center;
+  background-color: #ffd900;
 }
 
+.logo {
+  mask-image: url("https://raw.githubusercontent.com/Milotrince/website-goldengears/master/assets/logo-mask.png");
+  -webkit-mask-image: url("https://raw.githubusercontent.com/Milotrince/website-goldengears/master/assets/logo-mask.png");
+  mask-size: 200px;
+  -webkit-mask-size: 200px;
+  height: 200px;
+  width: 200px;
+}
+
+.logo.shine:hover {
+  animation-duration: 1.2s;
+}
+
+.short-logo {
+  mask-image: url("https://raw.githubusercontent.com/Milotrince/website-goldengears/master/assets/icon-mask.png");
+  -webkit-mask-image: url("https://raw.githubusercontent.com/Milotrince/website-goldengears/master/assets/icon-mask.png");
+  mask-size: 200px;
+  -webkit-mask-size: 200px;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+	animation: shine 4s ease-in-out infinite;
+}
 
 .shine-text {
 	-webkit-background-clip: text;
@@ -299,13 +306,22 @@ a:hover {
 
 .icon-container {
   text-decoration: none;
+  margin-top: 20px;
+  padding: 8px;
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
-  padding: 4px;
-  border-radius: 100px;
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  fill: white;
+}
+.icon #gradient {
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+.icon #gradient:hover {
+  opacity: 1.0;
 }
 
 .center-container {
