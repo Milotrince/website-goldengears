@@ -58,8 +58,8 @@ a.button {
 }
 
 .logo {
-  mask-image: url("https://raw.githubusercontent.com/Milotrince/website-goldengears/master/assets/logo-mask.png");
-  -webkit-mask-image: url("https://raw.githubusercontent.com/Milotrince/website-goldengears/master/assets/logo-mask.png");
+  mask-image: url("https://raw.githubusercontent.com/Milotrince/website-goldengears/master/assets/logos/logo-mask.png");
+  -webkit-mask-image: url("https://raw.githubusercontent.com/Milotrince/website-goldengears/master/assets/logos/logo-mask.png");
   mask-size: 200px;
   -webkit-mask-size: 200px;
   height: 200px;
@@ -71,8 +71,8 @@ a.button {
 }
 
 .short-logo {
-  mask-image: url("https://raw.githubusercontent.com/Milotrince/website-goldengears/master/assets/icon-mask.png");
-  -webkit-mask-image: url("https://raw.githubusercontent.com/Milotrince/website-goldengears/master/assets/icon-mask.png");
+  mask-image: url("https://raw.githubusercontent.com/Milotrince/website-goldengears/master/assets/logos/icon-mask.png");
+  -webkit-mask-image: url("https://raw.githubusercontent.com/Milotrince/website-goldengears/master/assets/logos/icon-mask.png");
   mask-size: 200px;
   -webkit-mask-size: 200px;
   height: 200px;
